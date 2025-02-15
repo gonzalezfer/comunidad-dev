@@ -3,43 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comunidad Dev</title>
+  <title>Comunidad de Programación</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="hero-content">
-      <h1>¡Estamos por lanzar algo emocionante!</h1>
-      <p>El gran lanzamiento será el sábado 15 de febrero a las 11:30 AM.</p>
-      <div id="countdown" class="countdown">
-        <div class="time">
-          <span id="days">00</span>
-          <p>Días</p>
-        </div>
-        <div class="time">
-          <span id="hours">00</span>
-          <p>Horas</p>
-        </div>
-        <div class="time">
-          <span id="minutes">00</span>
-          <p>Minutos</p>
-        </div>
-        <div class="time">
-          <span id="seconds">00</span>
-          <p>Segundos</p>
+  <header>
+  <div class="logo">Comunidad Dev</div>
+  <nav>
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" class="hamburger-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#info-comunidad">Acerca de</a></li>
+      <li><a href="#unirse">Unirse</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+          <h1>Bienvenidos a la Comunidad de Programación</h1>
+          <p>Conecta, aprende y colabora con otros programadores a través de WhatsApp.</p>
+        </div>          
+        <img src="cat.png" alt="Logo de la Comunidad" class="hero-image">
+    </section>
+
+    <section id="grupos" class="groups-carousel">
+      <div class="container">
+        <h2>Grupos Disponibles</h2>
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/455233234_1266177684616828_4047427218462121311_n.jpg?ccb=11-4&oh=01_Q5AaIIGOyrvFzscndDamkWo72OVsXzUVLFc4AlauR7wnAYTf&oe=67BDE2B6&_nc_sid=5e03e0&_nc_cat=108" alt="HTML, CSS, JS y TS" class="group-image">
+            <h3>HTML, CSS, JS y TS</h3>
+            <a href="https://chat.whatsapp.com/Itsoskt86NyKhfeJy3jURu" class="btn">Unirse</a>
+          </div>
+          <div class="carousel-item">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/472305440_561814686752291_1610321376308401961_n.jpg?ccb=11-4&oh=01_Q5AaIGx_EazBdw9z3QUmTFZ1L-S0iKQ5CwWuhLg3RGzAwfR-&oe=67BDE069&_nc_sid=5e03e0&_nc_cat=107" alt="Backend" class="group-image">
+            <h3>Backend</h3>
+            <a href="https://chat.whatsapp.com/GRU0hPFTmPnFV4X4phgJnb" class="btn">Unirse</a>
+          </div>
+          <div class="carousel-item">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/472003930_946220790362628_424758470888821150_n.jpg?ccb=11-4&oh=01_Q5AaIMABFAzQXJhIHOwIXS6PdzKEH-IhuRVvcLEffBB5PXSf&oe=67BDC6F3&_nc_sid=5e03e0&_nc_cat=104" alt="Cursos/Recursos Gratis" class="group-image">
+            <h3>Cursos/Recursos Gratis</h3>
+            <a href="https://chat.whatsapp.com/LW4DxA9DJne65owqY3x7s2" class="btn">Unirse</a>
+          </div>
+          <div class="carousel-item">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/472003930_946220790362628_424758470888821150_n.jpg?ccb=11-4&oh=01_Q5AaIMABFAzQXJhIHOwIXS6PdzKEH-IhuRVvcLEffBB5PXSf&oe=67BDC6F3&_nc_sid=5e03e0&_nc_cat=104" alt="Cursos/Recursos Gratis" class="group-image">
+            <h3>Cursos/Recursos Gratis</h3>
+            <a href="https://chat.whatsapp.com/LW4DxA9DJne65owqY3x7s2" class="btn">Unirse</a>
+          </div>
         </div>
       </div>
-    </div>
-    <img src="cat.png" alt="Comunidad Dev" class="hero-image">
-  </div>
+    </section>
 
-  <!-- Footer -->
+    <section id="info-comunidad" class="community-info">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <h2 id="groups-count" class="count">0</h2>
+            <p>Grupos</p>
+          </div>
+          <div class="stat">
+            <h2 id="users-count" class="count">0</h2>
+            <p>Usuarios</p>
+          </div>
+          <div class="stat">
+            <p class="description">Somos una comunidad apasionada por el desarrollo de software, donde compartimos conocimientos, resolvemos problemas y nos mantenemos al día con las últimas tendencias tecnológicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+      <div class="container">
+        <h2>Lo que dicen nuestros miembros</h2>
+        <div class="testimonial-list">
+  <div class="testimonial-item">
+    <p>"Gracias a la comunidad, he mejorado mis habilidades y ahora tengo la oportunidad de trabajar en proyectos interesantes como desarrollador."</p>
+    <p>- Martín Cruz</p>
+  </div>
+  <div class="testimonial-item">
+    <p>"Lo que más me gusta de esta comunidad es el ambiente de apoyo y la colaboración constante. Aquí aprendo algo nuevo todos los días."</p>
+    <p>- Valeria Jiménez</p>
+  </div>
+  <div class="testimonial-item">
+    <p>"Ser parte de este grupo ha sido fundamental para mi crecimiento profesional. La cantidad de recursos y ayuda que se ofrece es invaluable."</p>
+    <p>- Darío Mendoza</p>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <section id="unirse" class="join">
+      <div class="container">
+        <h2>Únete a Nuestra Comunidad</h2>
+        <p>Accede al grupo exclusivo de WhatsApp para interactuar con otros desarrolladores.</p>
+        <a href="https://chat.whatsapp.com/LorOw0p0adF88z7josllSZ" class="btn">Unirse al Grupo</a>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2025 Comunidad Dev. Todos los derechos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Comunidad Dev. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
-  <!-- Script -->
   <script src="scripts.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        arrows: true
+      });
+    });
+  </script>
 </body>
 </html>
