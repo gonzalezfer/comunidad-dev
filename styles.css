@@ -101,6 +101,7 @@ ul {
 .groups-carousel {
   padding: 20px 0 40px;
   background-color: #111;
+  overflow: hidden;
 }
 
 .groups-carousel h2 {
