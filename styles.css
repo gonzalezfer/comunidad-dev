@@ -1,3 +1,75 @@
+/* Variables */
+:root {
+  --primary-color: #63E2FF;
+  --secondary-color: #1F213B;
+  --background-color: #17182F;
+  --text-color: #FFFFFF;
+  --muted-color: #BBBBBB;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 8rem;
+  background: linear-gradient(120deg, var(--secondary-color), var(--background-color));
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--muted-color);
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 250px;
+  z-index: 5;
+}
 
 /* Countdown Timer */
 .countdown {
@@ -10,10 +82,16 @@
 .countdown .time {
   text-align: center;
   background-color: var(--secondary-color);
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   min-width: 100px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.countdown .time:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .countdown .time span {
@@ -26,4 +104,99 @@
 .countdown .time p {
   font-size: 1rem;
   color: var(--muted-color);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--secondary-color);
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #53C7E0;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 200px;
+  }
+
+  .countdown {
+    gap: 1rem;
+  }
+
+  .countdown .time {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    max-width: 150px;
+  }
+
+  .countdown .time {
+    padding: 0.8rem;
+  }
 }
