@@ -21,10 +21,3 @@ document.addEventListener("DOMContentLoaded", () => {
   animateCount(groupsCount, 35); // Cantidad de grupos
   animateCount(usersCount, 1047); // Cantidad de usuarios
 });
-
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
-
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
