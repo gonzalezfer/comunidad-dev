@@ -1,3 +1,20 @@
+:root{
+  --color-principal: #111;
+  --color-secundario: #222;
+  --color-hover: #444;
+  --color-principal-fuentes: #ddd;
+  --color-principal-parrafos: #bbb;
+}
+
+[data-theme="light"]{
+  --color-principal: #fff;
+  --color-secundario: #f0f4f8;
+  --color-hover: #444;
+  --color-principal-fuentes: #000;
+  --color-principal-parrafos: #000;
+
+}
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -7,8 +24,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #ddd;
+  background-color: var(--color-principal);
+  color: var(--color-principal-fuentes);
   line-height: 1.6;
 }
 
@@ -27,6 +44,24 @@ ul {
   margin: 0 auto;
 }
 
+/* MODO OSCURO Y CLARO */ 
+#theme-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+html[data-theme="dark"] .moon,
+html[data-theme="light"] .sun {
+  display: block;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
@@ -43,33 +78,39 @@ ul {
 
 .hero h1 {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--color-principal-fuentes);
   margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #bbb;
+  color: var(--color-pricipal-parrafos);
   margin-bottom: 40px;
+}
+
+.hero .btn-container{
+  display: flex;
+  gap: 20px;
 }
 
 .hero .btn {
   padding: 10px 20px;
-  color: #fff;
+  color: var(--color-principal-fuentes);
   border-radius: 40px;
   border: 1px solid #444;
   transition: background-color 0.3s;
 }
 
 .hero .btn:hover {
-  background-color: #444;
+  background-color: var(--color-hover);
+  color: white;
 }
 
 .hero-image {
   max-width: 30%;
   border-radius: 50%;
-  background-color: #111;
-  border: 2px solid #222;
+  background-color: var(--color-secundario);
+  border: 1px solid #222;
 }
 
 @media (max-width: 768px) {
@@ -100,13 +141,14 @@ ul {
 /* Groups Carousel */
 .groups-carousel {
   padding: 20px 0 40px;
-  background-color: #111;
+  background-color: var(--color-secundario);
   overflow: hidden;
+  border-bottom: 1px solid #333;
 }
 
 .groups-carousel h2 {
   text-align: center;
-  color: #fff;
+  color: var(--color-pricipal-fuentes);
   margin-bottom: 20px;
 }
 
@@ -117,7 +159,7 @@ ul {
 }
 
 .carousel-item {
-  background-color: #222;
+  background-color: var(--color-principal);
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #333;
@@ -141,11 +183,11 @@ ul {
 
 .group-header h3 {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--color-principal-fuentes);
 }
 
 .carousel-item p {
-  color: #ddd;
+  color: var(--color-principal-fuentes);
   font-size: 0.9rem;
   margin-bottom: 20px;
   max-width: 350px;
@@ -184,6 +226,8 @@ ul {
   align-items: center;
   padding: 40px 80px;
   gap: 40px;
+  border-bottom: 1px solid #333;
+
 }
 
 .stats {
@@ -198,12 +242,12 @@ ul {
 
 .stat .count {
   font-size: 2rem;
-  color: #fff;
+  color: var(--color-pricipal-fuentes);
 }
 
 .stat p {
   font-size: 1rem;
-  color: #bbb;
+  color: var(--color-pricipal-parrafos);
 }
 
 .stat.description {
@@ -229,12 +273,12 @@ ul {
 /* Testimonials */
 .testimonials {
   padding: 40px 20px;
-  background-color: #111;
+  background-color: var(--color-principal);
 }
 
 .testimonials h2 {
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--color-pricipal-fuentes);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -247,7 +291,7 @@ ul {
 }
 
 .testimonial-item {
-  background-color: #222;
+  background-color: var(--color-secundario);
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #333;
@@ -258,7 +302,7 @@ ul {
 
 .testimonial-item p {
   font-size: 1rem;
-  color: #bbb;
+  color: var(--color-pricipal-parrafos);
 }
 
 .testimonial-item p:first-child {
@@ -267,7 +311,7 @@ ul {
 
 .testimonial-item p:last-child {
   font-weight: bold;
-  color: #fff;
+  color: var(--color-principal-fuentes);
 }
 
 /* Tablet: 2 por línea */
@@ -288,12 +332,12 @@ ul {
 /* Footer */
 footer {
   padding: 20px;
-  background-color: #111;
+  background-color: var(--color-pricipal);
   text-align: center;
   border-top: 1px solid #333;
 }
 
 footer p {
   font-size: 0.9rem;
-  color: #bbb;
+  color: var(--color-pricipal-fuentes);
 }
