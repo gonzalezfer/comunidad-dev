@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Comunidad Dev</title>
   <meta name="description" content="Conecta, aprende y colabora con otros programadores a través de WhatsApp.">
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta property="og:image" content="https://comunidad-dev.vercel.app/images/frontpage.png" />
   <meta property="og:url" content="https://comunidad-dev.vercel.app" />
   <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>  
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -19,66 +21,208 @@
 <body>
 
   <main>
-    <section id="inicio" class="hero">
-        <img src="images/icon.png" alt="Logo de la Comunidad" class="hero-image">
-        <div class="hero-content">
-          <h1>Comunidad Dev</h1>            
-          <p>Conecta, aprende y colabora con otros programadores a través de WhatsApp.</p>
-          <a href="https://chat.whatsapp.com/LorOw0p0adF88z7josllSZ" class="btn">Unirse a la comunidad</a>
-        </div>          
-    </section>
+      <section id="home" class="hero">
+          <div class="hero-image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" stroke="#0AE98A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-    <section id="grupos" class="groups-carousel">
-  <div class="container">
-    <h2>Grupos Disponibles</h2>
-    <div class="carousel">
-      <div class="carousel-item">
-        <div class="group-header">
-          <img src="https://pps.whatsapp.net/v/t61.24694-24/455233234_1266177684616828_4047427218462121311_n.jpg?ccb=11-4&oh=01_Q5AaIIGOyrvFzscndDamkWo72OVsXzUVLFc4AlauR7wnAYTf&oe=67BDE2B6&_nc_sid=5e03e0&_nc_cat=108" alt="HTML, CSS, JS y TS" class="group-image">
-          <h3>HTML, CSS, JS y TS</h3>
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g id="SVGRepo_iconCarrier"> <path d="M10 4H6v6h4V4z"/> <path d="M18 14h-4v6h4v-6z"/> <path d="M14 4h2v6m-2 0h4"/> <path d="M6 14h2v6m-2 0h4"/> </g>
+
+</svg>
+          </div>
+          <div class="hero-content">
+              <h1 class="hero-title">Conecta, aprende y colabora.</h1>
+              <p class="hero-text">Únete a nuestra comunidad de programación en WhatsApp, un espacio para Juniors y Seniors donde compartir conocimientos, resolver dudas y crecer juntos.</p>
+              <a href="https://chat.whatsapp.com/LorOw0p0adF88z7josllSZ" class="btn">Unirse a la comunidad</a>
+          </div>
+      </section>
+
+<section id="grupos" class="groups-slider">
+        <h2 class="sub-title">Lista de Grupos Disponibles</h2>    
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Grupo 1 -->
+      <div class="swiper-slide">
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/455233234_1266177684616828_4047427218462121311_n.jpg?ccb=11-4&oh=01_Q5AaIIeGD0PhSuaqpf-VrGDyFyfbSkBYH8rKCo4egBSahNH6&oe=67C1D736&_nc_sid=5e03e0&_nc_cat=108" alt="HTML, CSS, JS y TS" class="group-image">
+            <div>
+              <h3>HTML, CSS, JS y TS</h3>
+              <span class="category">Desarrollo Web</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/Itsoskt86NyKhfeJy3jURu" class="btn">Unirse</a>
         </div>
-        <p>Aprende y comparte conocimientos sobre desarrollo web desde lo básico hasta frameworks avanzados con otros entusiastas.</p>
-        <a href="https://chat.whatsapp.com/Itsoskt86NyKhfeJy3jURu" class="btn">Unirse</a>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/473402185_1148117700101494_4481977193993527934_n.jpg?ccb=11-4&oh=01_Q5AaIOG-KOFWrS1h3dA8tqIXrfNM1QEp8FiiRJtxjVA4dhNr&oe=67C1F776&_nc_sid=5e03e0&_nc_cat=103" alt="English Community" class="group-image">
+            <div>
+              <h3>English Community</h3>
+              <span class="category">Idiomas</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/EoLyNVRPycNGnMZYrtD3eM" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/470330459_1696506534250179_7649142149150143361_n.jpg?ccb=11-4&oh=01_Q5AaIIZMCvaFz-RKcug4eeEDdTigWGAQf_EJQps4D7DDHdwT&oe=67C2D546&_nc_sid=5e03e0&_nc_cat=110" alt="TÉCNICO COMPU Y REDES 2" class="group-image">
+            <div>
+              <h3>TÉCNICO COMPU Y REDES 2</h3>
+              <span class="category">Redes y Sistemas</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/ExwiJtp19dOAwdLAXisilC" class="btn">Unirse</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <div class="group-header">
-          <img src="https://pps.whatsapp.net/v/t61.24694-24/472305440_561814686752291_1610321376308401961_n.jpg?ccb=11-4&oh=01_Q5AaIGx_EazBdw9z3QUmTFZ1L-S0iKQ5CwWuhLg3RGzAwfR-&oe=67BDE069&_nc_sid=5e03e0&_nc_cat=107" alt="Backend" class="group-image">
-          <h3>Backend</h3>
+
+      <!-- Grupo 2 -->
+      <div class="swiper-slide">
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471930763_973317198179324_8104496615651856055_n.jpg?ccb=11-4&oh=01_Q5AaIAaEZxAQqNAjTudau3ygsdg7aCBUh4Ys5QhCqZ7zemVy&oe=67C1F29F&_nc_sid=5e03e0&_nc_cat=103" alt="Bases Informáticas" class="group-image">
+            <div>
+              <h3>Bases Informáticas</h3>
+              <span class="category">Informática Básica</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/HPVmtXpuZYLA2ZDqY3L5uG" class="btn">Unirse</a>
         </div>
-        <p>Conéctate con expertos en desarrollo backend y discute temas como bases de datos, APIs y arquitectura de software.</p>
-        <a href="https://chat.whatsapp.com/GRU0hPFTmPnFV4X4phgJnb" class="btn">Unirse</a>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/460408314_9649544228408253_4442463230687049552_n.jpg?ccb=11-4&oh=01_Q5AaICmFRGZaSXa-rtE-CQwECtdNS8RBu4l3Is8iBj7qt-LD&oe=67C2EFBF&_nc_sid=5e03e0&_nc_cat=110" alt="ReactJS" class="group-image">
+            <div>
+              <h3>ReactJS</h3>
+              <span class="category">Desarrollo Web</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/LC2q42DASoZ61GmjgG1VTU" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471636676_1325736091915342_1878379528446393355_n.jpg?ccb=11-4&oh=01_Q5AaIGTEui8w2Jcwt1kzfzwbemsHRx0YCq0GOEIeeplH9a3k&oe=67C1E42A&_nc_sid=5e03e0&_nc_cat=109" alt="Termux" class="group-image">
+            <div>
+              <h3>Termux</h3>
+              <span class="category">Sistemas</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/KfcopFyURYaFm2rBDs74RV" class="btn">Unirse</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <div class="group-header">
-          <img src="https://pps.whatsapp.net/v/t61.24694-24/472003930_946220790362628_424758470888821150_n.jpg?ccb=11-4&oh=01_Q5AaIMABFAzQXJhIHOwIXS6PdzKEH-IhuRVvcLEffBB5PXSf&oe=67BDC6F3&_nc_sid=5e03e0&_nc_cat=104" alt="Cursos/Recursos Gratis" class="group-image">
-          <h3>Cursos/Recursos Gratis</h3>
+
+      <!-- Grupo 3 -->
+      <div class="swiper-slide">
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/470492572_1148348490189572_7465322663621656291_n.jpg?ccb=11-4&oh=01_Q5AaIDVIIcLrKCfY9Q1M-O90shqk5HunyfHLQAmqEBPUjg3I&oe=67C2045D&_nc_sid=5e03e0&_nc_cat=100" alt="Usuarios de Linux" class="group-image">
+            <div>
+              <h3>Usuarios de Linux</h3>
+              <span class="category">Sistemas Operativos</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/KKqtpmTKCe2FaR3cIWZc24" class="btn">Unirse</a>
         </div>
-        <p>Encuentra y comparte los mejores cursos y recursos gratuitos para seguir aprendiendo sobre programación y tecnología.</p>
-        <a href="https://chat.whatsapp.com/LW4DxA9DJne65owqY3x7s2" class="btn">Unirse</a>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/472492560_590545063698200_4310731846011526185_n.jpg?ccb=11-4&oh=01_Q5AaIFAXJs0_Pc4W6dL1UhFdl_otGFhW1Ew_R0TJRBYspIZa&oe=67C1E812&_nc_sid=5e03e0&_nc_cat=106" alt="AngularJS" class="group-image">
+            <div>
+              <h3>AngularJS</h3>
+              <span class="category">Desarrollo Web</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/GTjZEOHddncGj3ot5Mjz5X" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471741273_1664400104464173_7075447754346271300_n.jpg?ccb=11-4&oh=01_Q5AaIDjAHiVqrgz-4XeN0vuE_3mXSFtSJ7G1jXrVBmsBPegA&oe=67C1F43E&_nc_sid=5e03e0&_nc_cat=111" alt="C# & .NET" class="group-image">
+            <div>
+              <h3>C# & .NET</h3>
+              <span class="category">Desarrollo de Software</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/BoIZ1mV1jT008StOdpqyYQ" class="btn">Unirse</a>
+        </div>
+      </div>
+
+      <!-- Grupo 4 -->
+      <div class="swiper-slide">
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/459293582_1410552143252622_8357761827938778500_n.jpg?ccb=11-4&oh=01_Q5AaICKU7bOWiA8Mh-QNtldWNZwWX_XyvTkAFRK4jIntDfXW&oe=67C20FE2&_nc_sid=5e03e0&_nc_cat=108" alt="Diseño Gráfico" class="group-image">
+            <div>
+              <h3>Diseño Gráfico</h3>
+              <span class="category">Diseño</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/G2Rnq9rHRZWHCe8RIFMZTk" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471488150_893435879655779_3882601844720608042_n.jpg?ccb=11-4&oh=01_Q5AaIITylJ0mEPoTKNs69cpARcE0FY5iK-Ysc5S8H9RBTJpl&oe=67C20E80&_nc_sid=5e03e0&_nc_cat=104" alt="Usuarios de Windows" class="group-image">
+            <div>
+              <h3>Usuarios de Windows</h3>
+              <span class="category">Sistemas Operativos</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/D6iCsmncbbSGv8zFVVz3Fk" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471719290_583556067766077_4408653452875076390_n.jpg?ccb=11-4&oh=01_Q5AaICzN9ghuQp7szvLJQjzSq-1-aSV1ZtHom5wRSO2mYmrp&oe=67C20CA9&_nc_sid=5e03e0&_nc_cat=106" alt="UX/UI" class="group-image">
+            <div>
+              <h3>UX/UI</h3>
+              <span class="category">Diseño</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/I9H77eb5P74J3zV0UCaEyl" class="btn">Unirse</a>
+        </div>
+      </div>
+
+      <!-- Grupo 5 -->
+      <div class="swiper-slide">
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/469024108_1543688869479532_562280429090371188_n.jpg?ccb=11-4&oh=01_Q5AaINdB82VsDueqHJEnXsFmTqBVAlDcRZIPjnfoP2iiJhXQ&oe=67C1E35E&_nc_sid=5e03e0&_nc_cat=111" alt="Python" class="group-image">
+            <div>
+              <h3>Python</h3>
+              <span class="category">Programación</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/CUPTq0uzlc061x6nV0haHX" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471998544_1083064910166391_3910852745990019401_n.jpg?ccb=11-4&oh=01_Q5AaIDwM9zZSm7HMAmGwBemECNgJb4oxbbLksEM9wcP_R2SP&oe=67C21060&_nc_sid=5e03e0&_nc_cat=101" alt="Kotlin" class="group-image">
+            <div>
+              <h3>Kotlin</h3>
+              <span class="category">Programación</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/HjSG4yUHXWkK5K6AgS03N6" class="btn">Unirse</a>
+        </div>
+        <div class="group-item">
+          <div class="group-header">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/471844928_954356009427161_8936086050783683079_n.jpg?ccb=11-4&oh=01_Q5AaIP7RCTFn35j1M2bpI8XYMuJeMPsBIvtyCCwZsOPso0ul&oe=67C1DD34&_nc_sid=5e03e0&_nc_cat=102" alt="Swift" class="group-image">
+            <div>
+              <h3>Swift</h3>
+              <span class="category">Programación</span>
+            </div>
+          </div>
+          <a href="https://chat.whatsapp.com/Hbt6bNLgseq9y5bTssrFiz" class="btn">Unirse</a>
+        </div>
       </div>
     </div>
+
+    <!-- Indicadores -->
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 
-    <section id="info-comunidad" class="community-info">
-        <div class="stats">
-          <div class="stat">
-            <h2 id="groups-count" class="count">0</h2>
-            <p>Grupos</p>
-          </div>
-          <div class="stat">
-            <h2 id="users-count" class="count">0</h2>
-            <p>Usuarios</p>
-          </div>
-        </div>
-          <div class="stat">          
-            <p class="description">Somos una comunidad apasionada por el desarrollo de software, donde compartimos conocimientos, resolvemos problemas y nos mantenemos al día con las últimas tendencias tecnológicas.</p>
-          </div>
-    </section>
-
-    <section id="testimonios" class="testimonials">
+<section id="testimonios" class="testimonials">
       <div class="container">
-        <h2>Lo que dicen nuestros miembros</h2>
+        <h2 class="sub-title">Lo que dicen nuestros miembros</h2>
         <div class="testimonial-list">
   <div class="testimonial-item">
     <p>"Gracias a la comunidad, he mejorado mis habilidades y ahora tengo la oportunidad de trabajar en proyectos interesantes como desarrollador."</p>
@@ -104,18 +248,19 @@
   </footer>
 
   <script src="scripts.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3500,
-        arrows: true
-      });
-    });
-  </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+       document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+  });
+});
+   </script>
 </body>
 </html>
