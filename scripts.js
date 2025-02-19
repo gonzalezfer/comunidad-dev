@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Inicia las animaciones de conteo
-  animateCount(groupsCount, 35); // Cantidad de grupos
-  animateCount(usersCount, 1047); // Cantidad de usuarios
+  animateCount(groupsCount, 31); // Cantidad de grupos
+  animateCount(usersCount, 1037); // Cantidad de usuarios
 });
